@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/anemoi-training/anemoi_training-{{ version }}.tar.gz
-  sha256: b5d24bd5f787879c0d57f4479dccd25f42edf1456340b56f7b7bfa538fe4cd12
+  sha256: 74932ec6fa52e497d1e00aa823d2cec025f3d8d3b3e6f5f624ae53cc493d962e
 
 build:
   entry_points:
