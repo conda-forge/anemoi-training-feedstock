@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.17.1"
+  version: "0.17.2"
 
 package:
   name: anemoi-training
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/anemoi-training/anemoi_training-${{ version }}.tar.gz
-  sha256: e1c43bcbdecdf9a3026dba0e875a4bf1ad1d40bb1f910504c1a2cfc5b8ae1583
+  sha256: 6e07a9e0a2324ac02d5a7455f3be130f55cc2701ce9a5249730cd30bbe59a4d8
 
 build:
   number: 0
