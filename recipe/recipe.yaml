@@ -12,7 +12,7 @@ source:
   sha256: 6e07a9e0a2324ac02d5a7455f3be130f55cc2701ce9a5249730cd30bbe59a4d8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -38,9 +38,10 @@ requirements:
     - numpy
     - nvidia-ml-py >=13.580.82
     - pydantic >=2.9
-    - pytorch-lightning >=2.1
+    - pytorch-lightning >=2.6
     - timm >=0.9.2
-    - pytorch >=2.2,<2.11
+    - pytorch >=2.6,<2.12
+    - torchdata >=0.11
     - pytorch_geometric >=2.3.1
     - torchinfo >=1.8
     - torchvision >=0.18
