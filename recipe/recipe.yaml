@@ -12,11 +12,14 @@ source:
   sha256: 6e07a9e0a2324ac02d5a7455f3be130f55cc2701ce9a5249730cd30bbe59a4d8
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
+      - _anemoi-training-evaluate = anemoi.training.commands.evaluate:main
+      - _anemoi-training-profile = anemoi.training.commands.profiler:main
+      - _anemoi-training-train = anemoi.training.commands.train:main
       - anemoi-training = anemoi.training.__main__:main
 
 requirements:
