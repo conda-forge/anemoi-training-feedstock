@@ -12,7 +12,7 @@ source:
   sha256: fe839f6daf3c6bdc99e9a22415b6fe292a6999872747b3a28b26fab7f9fedf36
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -49,7 +49,6 @@ requirements:
     - torchinfo >=1.8
     - torchvision >=0.18
     - tqdm >=4.65
-    - zarr >=2.14.2
 
 tests:
   - python:
@@ -71,7 +70,7 @@ about:
   summary: A package to hold various functions to support training of ML models.
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://github.com/ecmwf/anemoi-training/
+  homepage: https://github.com/ecmwf/anemoi-core/
   documentation: https://anemoi-training.readthedocs.io/
 
 extra:
